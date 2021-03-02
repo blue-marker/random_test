@@ -1,0 +1,45 @@
+Weiss Phase 3.1 & 3.2
+
+
+
+1.20-day Cycle Breakouts: 
+  a. These are buy or sell signals that take place when prices cross the last 20-day cycle high (Buy signal) or the last 20-day cycle low (Sell Signal). 
+  b. Mark BUY-Entry (20 Day High), Sell-Entry (20 Day Low)
+  c. Only one entry in current Low and High
+
+2.80-day Cycle Breakouts:
+  a. Idem above except with 80-day cycle instead of 20.
+
+3.Trend Trading
+  a. Trend trading is a strategy that buys the market when the trend SHIFTS BULLISH (Coded in Phase 2.3), exits the market when the trend SHIFTS NEUTRAL, and goes short the market when the trend SHIFTS BEARISH. 
+  b  Anything to Bullish – Buy- Entry
+  c  Anything to Bearish – Sell-Entry
+  
+There are 4 types of exit for every entry type which are as follows
+
+1. Profit Exit: 
+   This exit signal triggers when prices have moved a certain percentage (+50% by default) 
+   from the entry point given above AND prices cross the smallest Cycle FLD in the opposite direction of the trade (Downcross for longs, Upcross for shorts).
+
+   a. if the buy -entry happens at 10, then when the price crosses (10+25% of 10 = 12.5) and the closing price crosses below 20 day FLD
+   b. If sale- entry happened at 10, then when price crosses below 7.5 and the closing price crosses above 20 day FLD
+
+
+2. Swing Exit: 
+   This exit signal triggers when prices break the last medium-term cycle (80-day for crypto) high or low depending on the trade’s direction (Last high for shorts, last low for longs).
+    
+    a. Sell Entry Position, If price moves above last 80 day high- Sell Exit occurs
+    b. Buy Entry Position, If price moves below last 80 day low- Buy Exit
+
+3. Turn exit: Same as above but using the smallest cycle (20-day in case of crypto).
+    
+4. Trend exit: 
+   This exit signal triggers when the trend shifts in the direction opposite of the original signal. For longs, Trend exits are when the market SHIFTS NEUTRAL or SHIFTS BEARISH. For shorts, Trend exits are when the market SHIFTS NEUTRAL or SHIFTS BULLISH.
+   
+   a. Buy Entry - Market shifts to Neutral or Bearish - Buy Exit
+   b. Sell Entry - Market Shifts to Neutral or Bullish - Sell Exit
+
+
+
+
+

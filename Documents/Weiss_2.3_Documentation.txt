@@ -1,0 +1,85 @@
+Weiss Phase 2.3
+------------------------
+
+Bullish (default) > Neutral > Parabloic2 > Parabolic1 > Bearish 
+----------------------------------------------------------------
+New Low and High should be taken after one day
+
+
+
+Neutral Start: if CP is less than Low80 or Low80_VTL
+
+Neutral Ends:  if CP is greater than High80 or High80_VTL
+
+----------------------------------------------------------------
+
+Parabolic2 Range: range = ((PreviousHigh320 - CurrentLow320)*3) + PreviousHigh320
+
+Parabolic2 Start: if CP is greater than above range (will check until second High80)
+
+Parabolic2 Ends: if CP is less than FLD20 
+
+1. After the Parabolic2 ends Neutral Phase will Start by default
+2. if during this Neutral phase CP is greater than the MAX value found in Parabolic2, then Parabolic2 will start again
+3. Otherwise the Neutral will end normally i.e when CP is greater than High80 only
+
+------------------------------------------------------------------------------
+
+Parabolic1 Range: if CP is greater than High80_VTL, then range = ((CP-PreviousLow320)*2.67) + CP
+
+(Note: when Low320 is not available (NA), we will take the lowest CP till date )
+
+
+Parabolic1 Start: if CP is greater than the above range and High80_VTL has a positive slope 
+
+a. this condition will be checked until next High80
+b. if the condition is not satisfied then the Parabolic Range condition is again checked from the next row
+c. if Parabolic1 is not found even after sliding down until the next High80, 
+   then the Parabolic1 condition is not checked until next Low320
+
+
+Parabolic1 Ends:  if CP is less than FLD20
+
+1. After the Parabolic1 ends Neutral Phase will Start by default and will end
+only if CP crosses High80
+
+
+Under this Neutral phase Bearish will only begin if certain conditions are meet and they are as follows
+
+1. After Neutral phase starts, if CP crosses above 20-day FLD and again crosses below 20-day FLD, then Bearish phase begin
+2. if CP goes below the last 20 day low.
+
+Just like in parabolic2, if CP crosses the highest point of parabolic phase during neutral phase, it goes back to parabolic 
+
+
+Virtual Low in 320:   
+
+Once we have 4 confirmed 80-day Lows after a 320-day Low then we calculate vector for each one of them
+
+ 1. calculate vector = sqrt((price_low - price_high)^2 + (day_low - day_high)^2), for each of these lows and then find the max vector 
+   
+    (price_high is price of prevHigh80 of that low80)
+
+ 2. the low corresponds to the max vector will be our “virtual 320 low”
+
+The "virtual 320 low" will be used as the 320 low from that low until next 320 low.
+and then we will move to next 320 low
+
+
+Note: We will be using Virtual Low only for Parabolic 1
+----------------------------------------------------------------------------------
+
+Bearish Start: if CP is less than Low320
+
+Bearish End:
+a. if CP is greater than High80_VTL, then Neutral phase starts
+
+   Neutral Ends: 
+   i.  if CP is greater than High80 then Bullish phase starts
+   ii. if CP is less than Low80 then Bearish phase starts  
+  
+
+b. if CP is greater than High80, then Bullish phase starts
+-------------------------------------------------------------------------------------
+
+All crosses will be checked for x consecutive days

@@ -1,0 +1,20 @@
+Phase 3.3 Summarises Phase 3.1 & 3.2
+
+For Buy:
+
+1. Entry Date : Date at which the entry happened
+2. Exit Date  : Date at which the exit happened
+3. Entry Price: Price at which the entry happened
+4. Exit Price : Price at which the exit happened
+5. Profit/Loss: Exit Price - Entry Price
+6. %Profit/Loss: ((Exit Price - Entry Price)/Entry Price)*100
+
+
+For Sell:
+
+1. Entry Date : Date at which the entry happened
+2. Exit Date  : Date at which the exit happened
+3. Entry Price: Price at which the entry happened
+4. Exit Price : Price at which the exit happened
+5. Profit/Loss: Entry Price - Exit Price
+6. %Profit/Loss: ((Entry Price - Exit Price)/Exit Price)*100

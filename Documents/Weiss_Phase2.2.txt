@@ -1,0 +1,26 @@
+Cycle Summary Sheet
+
+This is a summary of each cycle of each duration.
+This list will include:
+
+The cycle will start 1st Low to 2nd Low
+(Consider both Low and Backfilled Low)
+
+1. Start of cycle. Date of first low in Cycle
+2. Starting price. Price corresponding to first low.
+3. High of cycle. Date of cycle High.
+4. High Price. Price corresponding to high.
+5. End of Cycle. Date of second low in cycle.
+6. End price. Price of second low.
+7. Rally duration. Time from first low to high.
+8. Decline duration. Time from high to second low.
+9. Rally amount. Percentage up moves in cycle.
+10.Decline amount. Percentage down moves in cycle
+11.Cycle Nature. Backfilled or Natural Cycle?
+12.Cycle Trend. If second low > first low => Cycle is bullish. When second low < first low
+=> bearish cycle. If second low is “close” to first low => neutral cycle.
+
+(Neutral Cycle: If the up move from the first low to high and the down move from high to
+second low is within some defined range, i.e. suppose the up move from first low is x, so if
+the down move is in the range of 90% of x to 110% of x. The range will be defined later in
+call and will be kept flexible)
